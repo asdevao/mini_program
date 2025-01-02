@@ -1,0 +1,37 @@
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Eclipse
+.project
+.classpath
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+.venv
+.env
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info
+*.egg
+*.egg-link
+*.log
+*.db
+*.sqlite
+*.sqlite3
+*.db3
+*.dbm
+*.dat
+*.bak
+*.tmp
+*.swp
+*.swo
+*.bak
+*.tmp
