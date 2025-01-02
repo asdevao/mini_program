@@ -30,9 +30,9 @@ MAIL_SERVER = "smtp.qq.com"
 MAIL_PORT = 465  # 使用 SSL 端口
 MAIL_USE_TLS = False  # 不使用 STARTTLS
 MAIL_USE_SSL = True  # 使用 SSL
-MAIL_USERNAME = getenv("MAIL_USERNAME").value_or("1097802349@qq.com")
-MAIL_PASSWORD = getenv("MAIL_PASSWORD").value_or("lrnzfzhewjnlidjd")
-MAIL_DEFAULT_SENDER = getenv("MAIL_DEFAULT_SENDER").value_or("1097802349@qq.com")
+MAIL_USERNAME = getenv("MAIL_USERNAME")
+MAIL_PASSWORD = getenv("MAIL_PASSWORD")
+MAIL_DEFAULT_SENDER = getenv("MAIL_DEFAULT_SENDER")
 
 # Redis 配置
 REDIS_URL = getenv("REDIS_URL").value_or("redis://localhost:6379/0")
