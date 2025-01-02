@@ -4,8 +4,11 @@ FROM python:3.12.5
 # Sets the working directory for following COPY and CMD instructions
 # Notice we haven’t created a directory by this name - this instruction
 # creates a directory with this name if it doesn’t exist
+# 设置工作目录为 /app
 WORKDIR /app
 
+# 将整个当前目录的内容复制到容器的 /app 目录中
+COPY . /app
 # copy code
 # COPY . /app
 COPY requirements.txt /app
@@ -20,5 +23,5 @@ RUN pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
 EXPOSE 5000
 
 # Run app.py when the container launches
-COPY app.py /app
-# CMD ["python", "app.py"]
+
+CMD ["python","-m", "app"]
